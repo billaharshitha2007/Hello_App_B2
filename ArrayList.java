@@ -1,8 +1,5 @@
-class ArrayList {
-public static void main(String[] args ){
-String msg = "This is dev Branch";
-System.out.println(msg);
-
- }
-}
- 
+class HelloApp {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+} 
