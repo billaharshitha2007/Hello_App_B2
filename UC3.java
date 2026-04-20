@@ -2,30 +2,26 @@ class HelloApp {
 
     public static void main(String[] args) {
 
-        String message;
+        String name;
 
-        // Check if arguments are provided
         if (args.length > 0) {
 
-            // Join all names with comma and space
             StringBuilder nameBuilder = new StringBuilder();
 
             for (int i = 0; i < args.length; i++) {
                 nameBuilder.append(args[i]);
 
-                // Add comma only between names
                 if (i < args.length - 1) {
                     nameBuilder.append(", ");
                 }
             }
 
-            message = "Hello, " + nameBuilder.toString() + "!";
+            name = nameBuilder.toString();
+
         } else {
-            // Default case
-            message = "Hello, World!";
+            
+            name = "World";
         }
 
-        // Print output
-        System.out.println(message);
-    }
-}
+        
+        System.out
